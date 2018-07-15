@@ -230,13 +230,17 @@
 
     <!-- Main content -->
     <section class="content">
-        {% block pretitle %}{% endblock %}
+        <div class="row">
+            {% block pretitle %}{% endblock %}
+        </div>
 
+        <div class="row">
         {% block content %}
             {% block object-tools %}{% endblock %}
             {{ content }}
         {% endblock %}
         {% block sidebar %}{% endblock %}
+        </div>
     </section>
     <!-- /.content -->
   </div>
