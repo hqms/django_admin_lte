@@ -225,10 +225,7 @@
     <section class="content-header">
       {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
 
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
+      {% block breadcrumbs %}{% endblock %}
     </section>
 
     <!-- Main content -->
